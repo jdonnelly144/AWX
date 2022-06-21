@@ -1,7 +1,7 @@
 ---
 
 - name: cisco_clear_arp
-  hosts: {{ host_name }}
+  hosts: "{{ host_name }}"
   gather_facts: false
 
 
@@ -9,5 +9,4 @@
 
    - name: run clear arp command
      cisco.ios.ios_command:
-      commands:
-      - clear arp-cache {{ ip_address }}
+      commands: 'clear arp-cache {{ ip_address }}'
