@@ -7,6 +7,6 @@
 
   tasks:
 
-    -name: run show access session command
+   -name: run show access session
      cisco.ios.ios_command:
-       commands: show access-session | include Unauth
+      commands: show access-session | include Unauth
